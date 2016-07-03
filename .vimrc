@@ -136,7 +136,7 @@ Plugin 'tmhedberg/SimpylFold'
 Plugin 'vim-scripts/indentpython.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/syntastic'
-"Plugin 'Valloric/YouCompleteMe'
+"Plugin 'Valloric/YouCompleteMe'  " TODO: find a way to compile this on virtual machines
 Plugin 'nvie/vim-flake8'
 Plugin 'Lokaltog/vim-powerline'
 Plugin 'ctrlpvim/ctrlp.vim'
