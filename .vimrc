@@ -66,6 +66,10 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_python_checkers = ['pep8']  " TODO: check if this works
 
+" Configure TabMan (several options; mt and mf are default mappings)
+" let g:tabman_toggle = '<leader>mt'
+" let g:tabman_focus  = '<leader>mf'
+
 map <leader>k :Explore<CR>  " vim builtin alternative to NERDTree; when open, use i to toggle
 map <leader>n :NERDTreeToggle<CR>
 map <leader>td <Plug>TaskList
@@ -137,6 +141,8 @@ Plugin 'nvie/vim-flake8'
 Plugin 'Lokaltog/vim-powerline'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'tpope/vim-fugitive'
+Plugin 'saltstack/salt-vim'
+Plugin 'kien/tabman.vim'
 call vundle#end()
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
      
