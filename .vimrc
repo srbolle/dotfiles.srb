@@ -1,6 +1,52 @@
+set nocompatible	    " Disable vi-compatibility
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+filetype off		" required!
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+" let Vundle manage Vundle
+Plugin 'gmarik/Vundle.vim'
+
+" My Plugins here:
+"
+" original repos on github
+Plugin 'fs111/pydoc.vim'
+" Plugin 'vim-scripts/pep8' " Deleted 2016-07-02
+Plugin 'vim-scripts/TaskList.vim'
+" Plugin 'vim-scripts/The-NERD-tree' " Deleted 2016-07-02
+Plugin 'vim-scripts/taglist.vim'
+" Plugin 'sontek/minibufexpl.vim'
+Plugin 'fholgado/minibufexpl.vim'
+" Plugin 'klen/python-mode'  " Deleted 2016-07-02
+Plugin 'ervandew/supertab'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'reinh/vim-makegreen'
+Plugin 'alfredodeza/pytest.vim'
+Plugin 'lambdalisue/vim-django-support'
+" New from 2016-07-02
+Plugin 'tmhedberg/SimpylFold'
+Plugin 'vim-scripts/indentpython.vim'
+Plugin 'scrooloose/nerdtree'
+Plugin 'scrooloose/syntastic'
+"Plugin 'Valloric/YouCompleteMe'  " TODO: find a way to compile this on virtual machines
+Plugin 'nvie/vim-flake8'
+Plugin 'Lokaltog/vim-powerline'
+Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'tpope/vim-fugitive'
+Plugin 'saltstack/salt-vim'
+Plugin 'kien/tabman.vim'
+call vundle#end()
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+     
+filetype on               " try to detect filetypes
+filetype plugin indent on " required!
+" or
+" filetype plugin on " to not use th
+
+
 autocmd FileType python set omnifunc=pythoncomplete#Complete
 
-set nocompatible	    " Disable vi-compatibility
 set laststatus=2        " Always show the statusline (useful with Powerline)
 set showtabline=2       " Always display the tabline, even if there is only one tab (useful with Powerline)
 set encoding=utf-8
@@ -106,50 +152,6 @@ if 'VIRTUAL_ENV' in os.environ:
   execfile(activate_this, dict(__file__=activate_this))
 EOF
 
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-filetype off		" required!
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-
-" let Vundle manage Vundle
-Plugin 'gmarik/Vundle.vim'
-
-" My Plugins here:
-"
-" original repos on github
-Plugin 'fs111/pydoc.vim'
-" Plugin 'vim-scripts/pep8' " Deleted 2016-07-02
-Plugin 'vim-scripts/TaskList.vim'
-" Plugin 'vim-scripts/The-NERD-tree' " Deleted 2016-07-02
-Plugin 'vim-scripts/taglist.vim'
-" Plugin 'sontek/minibufexpl.vim'
-Plugin 'fholgado/minibufexpl.vim'
-" Plugin 'klen/python-mode'  " Deleted 2016-07-02
-Plugin 'ervandew/supertab'
-Plugin 'altercation/vim-colors-solarized'
-Plugin 'reinh/vim-makegreen'
-Plugin 'alfredodeza/pytest.vim'
-Plugin 'lambdalisue/vim-django-support'
-" New from 2016-07-02
-Plugin 'tmhedberg/SimpylFold'
-Plugin 'vim-scripts/indentpython.vim'
-Plugin 'scrooloose/nerdtree'
-Plugin 'scrooloose/syntastic'
-"Plugin 'Valloric/YouCompleteMe'  " TODO: find a way to compile this on virtual machines
-Plugin 'nvie/vim-flake8'
-Plugin 'Lokaltog/vim-powerline'
-Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'tpope/vim-fugitive'
-Plugin 'saltstack/salt-vim'
-Plugin 'kien/tabman.vim'
-call vundle#end()
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-     
-filetype on               " try to detect filetypes
-filetype plugin indent on " required!
-" or
-" filetype plugin on " to not use th
 
 syntax enable
 set background=dark
