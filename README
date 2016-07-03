@@ -1,0 +1,2 @@
+For syntastic to work:
+pip install flake8
