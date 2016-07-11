@@ -111,6 +111,8 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_python_checkers = ['flake8']  " some options: flake8, pyflakes, pylint, python
+let g:syntastic_python_flake8_args = '--ignore=E501'
+" let g:syntastic_python_flake8_post_args = '--max-line-length=120'
 
 " Configure TabMan (several options; mt and mf are default mappings)
 " let g:tabman_toggle = '<leader>mt'
