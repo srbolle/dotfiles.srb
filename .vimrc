@@ -28,6 +28,7 @@ Plugin 'lambdalisue/vim-django-support'
 Plugin 'tmhedberg/SimpylFold'
 Plugin 'vim-scripts/indentpython.vim'
 Plugin 'scrooloose/nerdtree'
+Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/syntastic'
 "Plugin 'Valloric/YouCompleteMe'  " TODO: find a way to compile this on virtual machines
 Plugin 'nvie/vim-flake8'
@@ -36,6 +37,7 @@ Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'saltstack/salt-vim'
 Plugin 'kien/tabman.vim'
+Plugin 'jalvesaq/Nvim-R'
 call vundle#end()
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
      
@@ -111,6 +113,8 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_python_checkers = ['flake8']  " some options: flake8, pyflakes, pylint, python
+" let g:syntastic_python_flake8_args = '--max-line-length=120'
+" let g:syntastic_python_flake8_post_args = --max-line-length=120
 
 " Configure TabMan (several options; mt and mf are default mappings)
 " let g:tabman_toggle = '<leader>mt'
