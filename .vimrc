@@ -70,10 +70,15 @@ au BufNewFile,BufRead *.py
     \ set autoindent |
     \ set fileformat=unix |
 
-au BufNewFile,BufRead *.js, *.html, *.css
-    \ set tabstop=2 |
-    \ set softtabstop=2 |
-    \ set shiftwidth=2 |
+au BufNewFile,BufRead *.html, *.css
+    \ setlocal tabstop=2 |
+    \ setlocal softtabstop=2 |
+    \ setlocal shiftwidth=2 
+
+au BufNewFile,BufRead *.js
+    \ setlocal tabstop=2 |
+    \ setlocal softtabstop=2 |
+    \ setlocal shiftwidth=2 
 
 " Flagging unnecessary whitespace
 " au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
