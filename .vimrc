@@ -38,6 +38,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'saltstack/salt-vim'
 Plugin 'kien/tabman.vim'
 Plugin 'jalvesaq/Nvim-R'
+Plugin 'posva/vim-vue'
 call vundle#end()
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
      
@@ -61,7 +62,17 @@ set softtabstop=4
 set shiftwidth=4
 set autoindent
 
-au BufNewFile,BufRead *.html, *.css
+au BufNewFile,BufRead *.html
+    \ set tabstop=2 |
+    \ set softtabstop=2 |
+    \ set shiftwidth=2
+
+au BufNewFile,BufRead *.vue
+    \ set tabstop=2 |
+    \ set softtabstop=2 |
+    \ set shiftwidth=2
+
+au BufNewFile,BufRead *.css
     \ set tabstop=2 |
     \ set softtabstop=2 |
     \ set shiftwidth=2
